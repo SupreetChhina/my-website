@@ -1,0 +1,143 @@
+.about-section {
+  min-height: 100vh;
+  background: #050b14;
+  padding: 80px 40px;
+}
+
+.section-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-paragraph {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #cccccc;
+  margin: 0;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.about-paragraph:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.about-paragraph:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.about-paragraph:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.highlight {
+  color: #00d9ff;
+  font-weight: 600;
+  position: relative;
+}
+
+.tech-stack {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.8s forwards;
+}
+
+.tech-card {
+  background: rgba(0, 217, 255, 0.05);
+  border: 1px solid rgba(0, 217, 255, 0.2);
+  border-radius: 12px;
+  padding: 40px 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 217, 255, 0.5);
+  background: rgba(0, 217, 255, 0.08);
+}
+
+.tech-name {
+  font-size: 36px;
+  font-weight: 700;
+  color: #00d9ff;
+  margin-bottom: 12px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.tech-label {
+  font-size: 12px;
+  color: #a0a0a0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 20px;
+  }
+
+  .about-content {
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .about-paragraph {
+    font-size: 16px;
+  }
+
+  .tech-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-card {
+    padding: 32px 24px;
+  }
+
+  .tech-name {
+    font-size: 32px;
+  }
+}
