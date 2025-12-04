@@ -33,16 +33,16 @@ const Navbar = () => {
 
         {/* Social Icons */}
         <div className="navbar-social">
-          <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <a href="https://www.instagram.com/supreet_chhina_/" target="_blank" rel="noopener noreferrer" className="social-icon">
             <Instagram size={20} />
           </a>
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <a href="https://github.com/SupreetChhina" target="_blank" rel="noopener noreferrer" className="social-icon">
             <Github size={20} />
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <a href="https://www.linkedin.com/in/supreet-chhina-a87789391/" target="_blank" rel="noopener noreferrer" className="social-icon">
             <Linkedin size={20} />
           </a>
-          <a href="mailto:your.email@example.com" className="social-icon">
+          <a href="mailto:supreetchhina01@gmail.com" className="social-icon">
             <Mail size={20} />
           </a>
         </div>
